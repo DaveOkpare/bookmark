@@ -3,14 +3,20 @@
   "version": "1.0.0",
   "main": "popup.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "rollup-build": "rollup sidepanel/index.js --file dist/sidepanel.bundle.js --format iife"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "@google/generative-ai": "^0.24.1",
     "@types/node": "^22.14.1",
+    "rollup": "^4.41.0",
+    "tsx": "^4.19.3",
     "typescript": "^5.8.3"
   }
 }
