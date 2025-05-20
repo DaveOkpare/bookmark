@@ -1,0 +1,16 @@
+{
+  "name": "Google Gemini Demo",
+  "version": "0.1",
+  "manifest_version": 3,
+  "description": "Try the Gemini Models.",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["sidePanel"],
+  "side_panel": {
+    "default_path": "sidepanel/index.html"
+  },
+  "action": {
+    "default_title": "Open Chat Interface"
+  }
+}
